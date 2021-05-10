@@ -1,0 +1,10 @@
+C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\bin\Debug\Borsa Projesi.exe.config
+C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\bin\Debug\Borsa Projesi.exe
+C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\bin\Debug\Borsa Projesi.pdb
+C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\obj\Debug\Borsa Projesi.csprojAssemblyReference.cache
+C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\obj\Debug\Borsa_Projesi.Form1.resources
+C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\obj\Debug\Borsa_Projesi.Properties.Resources.resources
+C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\obj\Debug\Borsa Projesi.csproj.GenerateResource.cache
+C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\obj\Debug\Borsa Projesi.exe
+C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\obj\Debug\Borsa Projesi.pdb
+C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\obj\Debug\Borsa_Projesi.LoginPage.resources
