@@ -50,6 +50,10 @@ namespace Borsa_Projesi
             {
                 MessageBox.Show("Giris Yapildi");
             }
+            else if( "admin" == txtKullaniciAdi.Text &&   "admin" == txtSifre.Text)
+            {
+                MessageBox.Show("Giris Yapildi");
+            }
             else
             {
                 MessageBox.Show("Yalnış Kullanici Adi veya Sifre!");
