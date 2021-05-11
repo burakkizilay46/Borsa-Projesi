@@ -40,11 +40,11 @@ namespace Borsa_Projesi
             string userName = txtKullaniciAdi.Text;
             string password = txtSifre.Text;
 
-            con = new SqlConnection("Data Source=DESKTOP-4UMSCIK;Initial Catalog=kullanici;Integrated Security=True");
+            con = new SqlConnection("Data Source=DESKTOP-SA7PU4L\\SQLEXPRESS;Initial Catalog=Borsa_Projesi;Integrated Security=True");
             cmd = new SqlCommand();
             con.Open();
             cmd.Connection = con;
-            cmd.CommandText = "SELECT * FROM kullanici where kullaniciadi = '" + txtKullaniciAdi.Text + "' AND sifre='" + txtSifre.Text.ToString() + "'";
+            cmd.CommandText = "SELECT * FROM borsa where kullaniciadi = '" + txtKullaniciAdi.Text + "' AND sifre='" + txtSifre.Text.ToString() + "'";
             dr = cmd.ExecuteReader();
             if (dr.Read())
             {
