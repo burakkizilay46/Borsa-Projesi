@@ -16,5 +16,11 @@ namespace Borsa_Projesi
         {
             InitializeComponent();
         }
+
+        private void btnUrunEkle_Click(object sender, EventArgs e)
+        {
+            FormUrunEkleme FrmUrun = new FormUrunEkleme();
+            FrmUrun.Show();
+        }
     }
 }

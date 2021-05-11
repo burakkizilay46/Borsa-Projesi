@@ -13,6 +13,7 @@ namespace Borsa_Projesi
 {
     public partial class Form1 : Form
     {
+        public static string gidenbilgi = "";
         public Form1()
         {
             InitializeComponent();
@@ -49,16 +50,27 @@ namespace Borsa_Projesi
             if (dr.Read())
             {
                 MessageBox.Show("Giris Yapildi");
+                AnaSayfa Asayfa = new AnaSayfa();
+                Asayfa.Show();
             }
             else if( "admin" == txtKullaniciAdi.Text &&   "admin" == txtSifre.Text)
             {
                 MessageBox.Show("Giris Yapildi");
+                AnaSayfa Asayfa = new AnaSayfa();
+                Asayfa.Show();
             }
             else
             {
                 MessageBox.Show("Yalnış Kullanici Adi veya Sifre!");
             }
             con.Close();
+
+            gidenbilgi = txtKullaniciAdi.Text;
+        }
+
+        private void txtKullaniciAdi_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

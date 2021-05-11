@@ -41,6 +41,7 @@ namespace Borsa_Projesi
             this.btnUrunEkle.TabIndex = 0;
             this.btnUrunEkle.Text = "ÜRÜN EKLEME";
             this.btnUrunEkle.UseVisualStyleBackColor = true;
+            this.btnUrunEkle.Click += new System.EventHandler(this.btnUrunEkle_Click);
             // 
             // AnaSayfa
             // 
