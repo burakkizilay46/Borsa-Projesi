@@ -22,7 +22,7 @@ namespace Borsa_Projesi
         private void btnUrunEkle_Click(object sender, EventArgs e)
         {
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("insert into urunekleme (kullanıcıadı,ürünadı,ürünmiktarı) values ('" + txtUrunAdi.Text.ToString() + "' , '" + txtUrunMiktari.Text.ToString() + "')", baglanti);
+            SqlCommand komut = new SqlCommand("insert into urunekleme (ürünadı,ürünmiktarı,ürünfiyati) values ('" + txtUrunAdi.Text.ToString() + "' , '" + txtUrunMiktari.Text.ToString() + "' , '" + txtUrunFiyatı.Text.ToString() +"')", baglanti);
 
             komut.ExecuteNonQuery();
             baglanti.Close();

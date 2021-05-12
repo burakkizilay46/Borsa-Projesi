@@ -35,6 +35,8 @@ namespace Borsa_Projesi
             this.txtUrunMiktari = new System.Windows.Forms.TextBox();
             this.btnUrunEkle = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.txtUrunFiyatı = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -76,11 +78,11 @@ namespace Borsa_Projesi
             // btnUrunEkle
             // 
             this.btnUrunEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnUrunEkle.Location = new System.Drawing.Point(247, 270);
+            this.btnUrunEkle.Location = new System.Drawing.Point(225, 317);
             this.btnUrunEkle.Name = "btnUrunEkle";
-            this.btnUrunEkle.Size = new System.Drawing.Size(138, 56);
+            this.btnUrunEkle.Size = new System.Drawing.Size(183, 56);
             this.btnUrunEkle.TabIndex = 4;
-            this.btnUrunEkle.Text = "Ürünleri Ekle";
+            this.btnUrunEkle.Text = "Ürün Ekle";
             this.btnUrunEkle.UseVisualStyleBackColor = true;
             this.btnUrunEkle.Click += new System.EventHandler(this.btnUrunEkle_Click);
             // 
@@ -94,11 +96,31 @@ namespace Borsa_Projesi
             this.label3.TabIndex = 5;
             this.label3.Text = "label1";
             // 
+            // txtUrunFiyatı
+            // 
+            this.txtUrunFiyatı.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtUrunFiyatı.Location = new System.Drawing.Point(225, 247);
+            this.txtUrunFiyatı.Name = "txtUrunFiyatı";
+            this.txtUrunFiyatı.Size = new System.Drawing.Size(183, 34);
+            this.txtUrunFiyatı.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(56, 247);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(152, 29);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Ürün Fiyatı :";
+            // 
             // FormUrunEkleme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(513, 431);
+            this.Controls.Add(this.txtUrunFiyatı);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnUrunEkle);
             this.Controls.Add(this.txtUrunMiktari);
@@ -121,5 +143,7 @@ namespace Borsa_Projesi
         private System.Windows.Forms.TextBox txtUrunMiktari;
         private System.Windows.Forms.Button btnUrunEkle;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtUrunFiyatı;
+        private System.Windows.Forms.Label label4;
     }
 }
