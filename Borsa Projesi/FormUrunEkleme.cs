@@ -21,8 +21,9 @@ namespace Borsa_Projesi
 
         private void btnUrunEkle_Click(object sender, EventArgs e)
         {
+            string onayDurumu = "Hayır";
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("insert into urunekleme (kullanıcıadı,ürünadı,ürünmiktarı,ürünfiyati) values ('" + label3.Text.ToString() + "' , '" + txtUrunAdi.Text.ToString() + "' , '" + txtUrunMiktari.Text.ToString() + "' , '" + txtUrunFiyatı.Text.ToString() +"')", baglanti);
+            SqlCommand komut = new SqlCommand("insert into urunekleme (kullanıcıadı,ürünadı,ürünmiktarı,ürünfiyati,onaylanma) values ('" + label3.Text.ToString() + "' , '" + txtUrunAdi.Text.ToString() + "' , '" + txtUrunMiktari.Text.ToString() + "' , '" + txtUrunFiyatı.Text.ToString() + "' , '" + onayDurumu.ToString() + "')", baglanti);
 
             komut.ExecuteNonQuery();
             baglanti.Close();
@@ -31,7 +32,6 @@ namespace Borsa_Projesi
         private void FormUrunEkleme_Load(object sender, EventArgs e)
         {
             label3.Text = Form1.gidenbilgi.ToString();
-            
         }
 
         private void KisiGor_SelectedIndexChanged(object sender, EventArgs e)

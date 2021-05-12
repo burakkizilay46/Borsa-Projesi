@@ -22,5 +22,11 @@ namespace Borsa_Projesi
             FormUrunEkleme FrmUrun = new FormUrunEkleme();
             FrmUrun.Show();
         }
+
+        private void btnUrunAl_Click(object sender, EventArgs e)
+        {
+            FormUrunAl FrmUrunAl = new FormUrunAl();
+            FrmUrunAl.Show();
+        }
     }
 }
