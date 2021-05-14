@@ -36,7 +36,7 @@ namespace Borsa_Projesi
             // btnUrunEkle
             // 
             this.btnUrunEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnUrunEkle.Location = new System.Drawing.Point(69, 36);
+            this.btnUrunEkle.Location = new System.Drawing.Point(69, 86);
             this.btnUrunEkle.Name = "btnUrunEkle";
             this.btnUrunEkle.Size = new System.Drawing.Size(259, 172);
             this.btnUrunEkle.TabIndex = 0;
@@ -47,7 +47,7 @@ namespace Borsa_Projesi
             // btnUrunAl
             // 
             this.btnUrunAl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnUrunAl.Location = new System.Drawing.Point(566, 36);
+            this.btnUrunAl.Location = new System.Drawing.Point(543, 86);
             this.btnUrunAl.Name = "btnUrunAl";
             this.btnUrunAl.Size = new System.Drawing.Size(259, 172);
             this.btnUrunAl.TabIndex = 1;
@@ -59,11 +59,12 @@ namespace Borsa_Projesi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(972, 560);
+            this.ClientSize = new System.Drawing.Size(904, 340);
             this.Controls.Add(this.btnUrunAl);
             this.Controls.Add(this.btnUrunEkle);
             this.Name = "AnaSayfa";
             this.Text = "AnaSayfa";
+            this.Load += new System.EventHandler(this.AnaSayfa_Load);
             this.ResumeLayout(false);
 
         }

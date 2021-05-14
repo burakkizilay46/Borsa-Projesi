@@ -16,6 +16,7 @@ namespace Borsa_Projesi
         {
             InitializeComponent();
         }
+        public string kullaniciAdi { get; set; }
 
         private void btnUrunEkle_Click(object sender, EventArgs e)
         {
@@ -27,6 +28,17 @@ namespace Borsa_Projesi
         {
             FormUrunAl FrmUrunAl = new FormUrunAl();
             FrmUrunAl.Show();
+        }
+
+        private void btnOnay_Click(object sender, EventArgs e)
+        {
+            FormAdminOnay adminPage = new FormAdminOnay();
+            adminPage.Show();
+        }
+
+        private void AnaSayfa_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

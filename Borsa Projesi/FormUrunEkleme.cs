@@ -17,16 +17,26 @@ namespace Borsa_Projesi
         {
             InitializeComponent();
         }
-        SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-SA7PU4L\\SQLEXPRESS;Initial Catalog=Borsa_Projesi;Integrated Security=True");
+        SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-4UMSCIK;Initial Catalog=kullanici;Integrated Security=True");
 
         private void btnUrunEkle_Click(object sender, EventArgs e)
         {
-            string onayDurumu = "Hayır";
+            bool onayDurumu = false;
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("insert into urunekleme (kullanıcıadı,ürünadı,ürünmiktarı,ürünfiyati,onaylanma) values ('" + label3.Text.ToString() + "' , '" + txtUrunAdi.Text.ToString() + "' , '" + txtUrunMiktari.Text.ToString() + "' , '" + txtUrunFiyatı.Text.ToString() + "' , '" + onayDurumu.ToString() + "')", baglanti);
-
+            SqlCommand komut = new SqlCommand("insert into urun (kullaniciadi,urunadi,urunmiktari,urunfiyati,onaydurumu) values ('" + label3.Text.ToString() + "' , '" + txtUrunAdi.Text.ToString() + "' , '" + txtUrunMiktari.Text.ToString() + "' , '" + txtUrunFiyatı.Text.ToString() + "' , '" + onayDurumu.ToString() + "')", baglanti);
             komut.ExecuteNonQuery();
             baglanti.Close();
+            MessageBox.Show("Ürün Başarıyla Eklendi! , Admin Tarafından Onaylanınca Ürünler Listesinde Görünecektir");
+
+            foreach (Control item in this.Controls)
+            {
+                if (item is TextBox)
+                {
+                    TextBox tbox = (TextBox)item;
+                    tbox.Clear();
+                }
+            }
+
         }
 
         private void FormUrunEkleme_Load(object sender, EventArgs e)

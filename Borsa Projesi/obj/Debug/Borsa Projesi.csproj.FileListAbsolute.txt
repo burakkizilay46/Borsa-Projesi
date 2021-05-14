@@ -22,3 +22,7 @@ C:\Users\niyaz\OneDrive\Belgeler\GitHub\Borsa-Projesi\Borsa Projesi\obj\Debug\Bo
 C:\Users\niyaz\OneDrive\Belgeler\GitHub\Borsa-Projesi\Borsa Projesi\obj\Debug\Borsa_Projesi.AnaSayfa.resources
 C:\Users\niyaz\OneDrive\Belgeler\GitHub\Borsa-Projesi\Borsa Projesi\obj\Debug\Borsa_Projesi.FormUrunEkleme.resources
 C:\Users\niyaz\OneDrive\Belgeler\GitHub\Borsa-Projesi\Borsa Projesi\obj\Debug\Borsa_Projesi.FormUrunAl.resources
+C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\obj\Debug\Borsa_Projesi.AnaSayfa.resources
+C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\obj\Debug\Borsa_Projesi.FormUrunAl.resources
+C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\obj\Debug\Borsa_Projesi.FormUrunEkleme.resources
+C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\obj\Debug\Borsa_Projesi.FormAdminOnay.resources

@@ -17,7 +17,7 @@ namespace Borsa_Projesi
         {
             InitializeComponent();
         }
-        SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-SA7PU4L\\SQLEXPRESS;Initial Catalog=Borsa_Projesi;Integrated Security=True");
+        SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-4UMSCIK;Initial Catalog=kullanici;Integrated Security=True");
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -26,8 +26,10 @@ namespace Borsa_Projesi
         private void btnKayit_Click(object sender, EventArgs e)
         {
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("insert into borsa (ad,soyad,kullaniciadi,sifre,tcno,telefon,email,adres) values ('" + txtKayitAd.Text.ToString() + "', '" + txtKayitSoyad.Text.ToString() + "','" + txtKayitKullaniciad.Text.ToString() + "','" + txtKayitSifre.Text.ToString() + "' , '" + txtKayitTC.Text.ToString() + "' , '" + txtKayitTelefon.Text.ToString() + "' , '" + txtKayitMail.Text.ToString() + "' , '" + txtKayitAdres.Text.ToString() + "')", baglanti);
+            SqlCommand komut = new SqlCommand("insert into kullanici (ad,soyad,kullaniciadi,sifre,tcno,telefon,email,adres) values ('" + txtKayitAd.Text.ToString() + "', '" + txtKayitSoyad.Text.ToString() + "','" + txtKayitKullaniciad.Text.ToString() + "','" + txtKayitSifre.Text.ToString() + "' , '" + txtKayitTC.Text.ToString() + "' , '" + txtKayitTelefon.Text.ToString() + "' , '" + txtKayitMail.Text.ToString() + "' , '" + txtKayitAdres.Text.ToString() + "')", baglanti);
             komut.ExecuteNonQuery();
+            SqlCommand komutBakiye = new SqlCommand("insert into bakiye (kullaniciadi , bakiye) values ('" + txtKayitKullaniciad.Text.ToString() + "' ,'" + "0" + "')", baglanti);
+            komutBakiye.ExecuteNonQuery();
             baglanti.Close();
             foreach (Control item in this.Controls)
             {
