@@ -44,5 +44,20 @@ namespace Borsa_Projesi
         {
             urunVerileriniGörüntüle();
         }
+
+        String secilenUrun;
+        private void btnUrunOnayla_Click(object sender, EventArgs e)
+        {
+            baglan.Open();
+            SqlCommand urunOnayla = new SqlCommand("Update urun set onaydurumu = '" + "True" + "' where urunadi = '" + secilenUrun.ToString() + "'", baglan);
+            urunOnayla.ExecuteNonQuery();
+            baglan.Close();
+            urunVerileriniGörüntüle();
+        }
+
+        private void lstUrunOnay_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            secilenUrun = lstUrunOnay.SelectedItems[0].SubItems[1].Text;
+        }
     }
 }

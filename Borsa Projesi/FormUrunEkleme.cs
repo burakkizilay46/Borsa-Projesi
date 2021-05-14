@@ -19,7 +19,7 @@ namespace Borsa_Projesi
         }
         SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-4UMSCIK;Initial Catalog=kullanici;Integrated Security=True");
 
-        private void btnUrunEkle_Click(object sender, EventArgs e)
+        private void urunKaydet()
         {
             bool onayDurumu = false;
             baglanti.Open();
@@ -36,7 +36,10 @@ namespace Borsa_Projesi
                     tbox.Clear();
                 }
             }
-
+        }
+        private void btnUrunEkle_Click(object sender, EventArgs e)
+        {
+            urunKaydet();
         }
 
         private void FormUrunEkleme_Load(object sender, EventArgs e)
@@ -47,6 +50,12 @@ namespace Borsa_Projesi
         private void KisiGor_SelectedIndexChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            urunKaydet();
+            this.Close();
         }
     }
 }

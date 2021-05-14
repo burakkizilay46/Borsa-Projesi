@@ -31,8 +31,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnUrunOnayla = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.listView2 = new System.Windows.Forms.ListView();
+            this.btnBakiyeOnayla = new System.Windows.Forms.Button();
+            this.lstBakiyeOnay = new System.Windows.Forms.ListView();
             this.lstUrunOnay = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -61,11 +61,12 @@
             this.btnUrunOnayla.TabIndex = 1;
             this.btnUrunOnayla.Text = "Onayla";
             this.btnUrunOnayla.UseVisualStyleBackColor = true;
+            this.btnUrunOnayla.Click += new System.EventHandler(this.btnUrunOnayla_Click);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.listView2);
+            this.groupBox2.Controls.Add(this.btnBakiyeOnayla);
+            this.groupBox2.Controls.Add(this.lstBakiyeOnay);
             this.groupBox2.Location = new System.Drawing.Point(12, 370);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(917, 318);
@@ -73,23 +74,23 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Onaylanmayan Bakiye";
             // 
-            // button2
+            // btnBakiyeOnayla
             // 
-            this.button2.Location = new System.Drawing.Point(808, 33);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(89, 36);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnBakiyeOnayla.Location = new System.Drawing.Point(808, 33);
+            this.btnBakiyeOnayla.Name = "btnBakiyeOnayla";
+            this.btnBakiyeOnayla.Size = new System.Drawing.Size(89, 36);
+            this.btnBakiyeOnayla.TabIndex = 1;
+            this.btnBakiyeOnayla.Text = "Onayla";
+            this.btnBakiyeOnayla.UseVisualStyleBackColor = true;
             // 
-            // listView2
+            // lstBakiyeOnay
             // 
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(16, 33);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(786, 262);
-            this.listView2.TabIndex = 1;
-            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.lstBakiyeOnay.HideSelection = false;
+            this.lstBakiyeOnay.Location = new System.Drawing.Point(16, 33);
+            this.lstBakiyeOnay.Name = "lstBakiyeOnay";
+            this.lstBakiyeOnay.Size = new System.Drawing.Size(786, 262);
+            this.lstBakiyeOnay.TabIndex = 1;
+            this.lstBakiyeOnay.UseCompatibleStateImageBehavior = false;
             // 
             // lstUrunOnay
             // 
@@ -105,6 +106,7 @@
             this.lstUrunOnay.TabIndex = 3;
             this.lstUrunOnay.UseCompatibleStateImageBehavior = false;
             this.lstUrunOnay.View = System.Windows.Forms.View.Details;
+            this.lstUrunOnay.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lstUrunOnay_MouseDoubleClick);
             // 
             // columnHeader1
             // 
@@ -114,17 +116,17 @@
             // columnHeader2
             // 
             this.columnHeader2.Text = "Ürün";
-            this.columnHeader2.Width = 163;
+            this.columnHeader2.Width = 133;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "Miktar";
-            this.columnHeader3.Width = 95;
+            this.columnHeader3.Width = 129;
             // 
             // columnHeader4
             // 
             this.columnHeader4.Text = "Fiyat (kg)";
-            this.columnHeader4.Width = 79;
+            this.columnHeader4.Width = 138;
             // 
             // FormAdminOnay
             // 
@@ -147,8 +149,8 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnUrunOnayla;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ListView listView2;
+        private System.Windows.Forms.Button btnBakiyeOnayla;
+        private System.Windows.Forms.ListView lstBakiyeOnay;
         private System.Windows.Forms.ListView lstUrunOnay;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
