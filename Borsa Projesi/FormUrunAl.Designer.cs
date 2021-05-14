@@ -34,13 +34,14 @@ namespace Borsa_Projesi
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label1 = new System.Windows.Forms.Label();
             this.btnGoster = new System.Windows.Forms.Button();
             this.txtBakiye = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnYukle = new System.Windows.Forms.Button();
-            this.txtBakiyeGoster = new System.Windows.Forms.TextBox();
+            this.lblKullaniciAdi = new System.Windows.Forms.Label();
+            this.lblBakiye = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // LstStok
@@ -49,8 +50,7 @@ namespace Borsa_Projesi
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5});
+            this.columnHeader4});
             this.LstStok.HideSelection = false;
             this.LstStok.Location = new System.Drawing.Point(25, 82);
             this.LstStok.Name = "LstStok";
@@ -80,11 +80,6 @@ namespace Borsa_Projesi
             this.columnHeader4.Text = "Fiyat (kg)";
             this.columnHeader4.Width = 79;
             // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Onay";
-            this.columnHeader5.Width = 70;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -109,7 +104,7 @@ namespace Borsa_Projesi
             // txtBakiye
             // 
             this.txtBakiye.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtBakiye.Location = new System.Drawing.Point(817, 106);
+            this.txtBakiye.Location = new System.Drawing.Point(772, 144);
             this.txtBakiye.Name = "txtBakiye";
             this.txtBakiye.Size = new System.Drawing.Size(124, 34);
             this.txtBakiye.TabIndex = 3;
@@ -127,28 +122,52 @@ namespace Borsa_Projesi
             // btnYukle
             // 
             this.btnYukle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnYukle.Location = new System.Drawing.Point(817, 188);
+            this.btnYukle.Location = new System.Drawing.Point(918, 144);
             this.btnYukle.Name = "btnYukle";
-            this.btnYukle.Size = new System.Drawing.Size(124, 40);
+            this.btnYukle.Size = new System.Drawing.Size(124, 72);
             this.btnYukle.TabIndex = 6;
             this.btnYukle.Text = "YÜKLE";
             this.btnYukle.UseVisualStyleBackColor = true;
             this.btnYukle.Click += new System.EventHandler(this.btnYukle_Click);
             // 
-            // txtBakiyeGoster
+            // lblKullaniciAdi
             // 
-            this.txtBakiyeGoster.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtBakiyeGoster.Location = new System.Drawing.Point(817, 293);
-            this.txtBakiyeGoster.Name = "txtBakiyeGoster";
-            this.txtBakiyeGoster.Size = new System.Drawing.Size(124, 34);
-            this.txtBakiyeGoster.TabIndex = 7;
+            this.lblKullaniciAdi.AutoSize = true;
+            this.lblKullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblKullaniciAdi.Location = new System.Drawing.Point(912, 76);
+            this.lblKullaniciAdi.Name = "lblKullaniciAdi";
+            this.lblKullaniciAdi.Size = new System.Drawing.Size(93, 32);
+            this.lblKullaniciAdi.TabIndex = 8;
+            this.lblKullaniciAdi.Text = "label2";
+            // 
+            // lblBakiye
+            // 
+            this.lblBakiye.AutoSize = true;
+            this.lblBakiye.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblBakiye.Location = new System.Drawing.Point(767, 191);
+            this.lblBakiye.Name = "lblBakiye";
+            this.lblBakiye.Size = new System.Drawing.Size(64, 25);
+            this.lblBakiye.TabIndex = 9;
+            this.lblBakiye.Text = "label4";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(769, 82);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(126, 31);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Kullanıcı:";
             // 
             // FormUrunAl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1069, 598);
-            this.Controls.Add(this.txtBakiyeGoster);
+            this.ClientSize = new System.Drawing.Size(1162, 598);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblBakiye);
+            this.Controls.Add(this.lblKullaniciAdi);
             this.Controls.Add(this.btnYukle);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtBakiye);
@@ -157,6 +176,7 @@ namespace Borsa_Projesi
             this.Controls.Add(this.LstStok);
             this.Name = "FormUrunAl";
             this.Text = "n b";
+            this.Load += new System.EventHandler(this.FormUrunAl_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,12 +189,13 @@ namespace Borsa_Projesi
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnGoster;
         private System.Windows.Forms.TextBox txtBakiye;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnYukle;
-        private System.Windows.Forms.TextBox txtBakiyeGoster;
+        private System.Windows.Forms.Label lblKullaniciAdi;
+        private System.Windows.Forms.Label lblBakiye;
+        private System.Windows.Forms.Label label2;
     }
 }
