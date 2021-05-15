@@ -63,15 +63,17 @@ namespace Borsa_Projesi
 
         private void btnYukle_Click(object sender, EventArgs e)
         {
-            int eklenecekBakiye = Int32.Parse(txtBakiye.Text);
-            bakiye += eklenecekBakiye;
-            baglan.Open();
-            SqlCommand bakiyeGuncelle = new SqlCommand("Update bakiye set bakiye = '" + bakiye.ToString()+ "' where kullaniciadi = '" + lblKullaniciAdi.Text.ToString() + "'", baglan);
-            bakiyeGuncelle.ExecuteNonQuery();
-            baglan.Close();
-
-            txtBakiye.Clear();
-            bakiyeGoster();
+            frmBakiyeIstek bakiyeIstek = new frmBakiyeIstek();
+            bakiyeIstek.Show();
+           // int eklenecekBakiye = Int32.Parse(txtBakiye.Text);
+           // bakiye += eklenecekBakiye;
+           // baglan.Open();
+           // SqlCommand bakiyeGuncelle = new SqlCommand("Update bakiye set bakiye = '" + bakiye.ToString()+ "' where kullaniciadi = '" + lblKullaniciAdi.Text.ToString() + "'", baglan);
+           // bakiyeGuncelle.ExecuteNonQuery();
+           // baglan.Close();
+           //
+           // txtBakiye.Clear();
+           // bakiyeGoster();
         }
 
         private void FormUrunAl_Load(object sender, EventArgs e)
