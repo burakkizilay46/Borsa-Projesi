@@ -34,20 +34,22 @@
             this.lblKullanici = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblBakiye = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtBakiyeIstek
             // 
-            this.txtBakiyeIstek.Location = new System.Drawing.Point(179, 227);
+            this.txtBakiyeIstek.Location = new System.Drawing.Point(611, 169);
             this.txtBakiyeIstek.Name = "txtBakiyeIstek";
             this.txtBakiyeIstek.Size = new System.Drawing.Size(146, 22);
             this.txtBakiyeIstek.TabIndex = 0;
             // 
             // btnBakiyeIste
             // 
-            this.btnBakiyeIste.Location = new System.Drawing.Point(389, 220);
+            this.btnBakiyeIste.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnBakiyeIste.Location = new System.Drawing.Point(611, 215);
             this.btnBakiyeIste.Name = "btnBakiyeIste";
-            this.btnBakiyeIste.Size = new System.Drawing.Size(144, 37);
+            this.btnBakiyeIste.Size = new System.Drawing.Size(143, 48);
             this.btnBakiyeIste.TabIndex = 1;
             this.btnBakiyeIste.Text = "Bakiye Yükle";
             this.btnBakiyeIste.UseVisualStyleBackColor = true;
@@ -59,17 +61,17 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(12, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(150, 36);
+            this.label1.Size = new System.Drawing.Size(120, 29);
             this.label1.TabIndex = 2;
             this.label1.Text = "Kullanıcı:";
             // 
             // lblKullanici
             // 
             this.lblKullanici.AutoSize = true;
-            this.lblKullanici.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblKullanici.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblKullanici.Location = new System.Drawing.Point(138, 26);
             this.lblKullanici.Name = "lblKullanici";
-            this.lblKullanici.Size = new System.Drawing.Size(178, 36);
+            this.lblKullanici.Size = new System.Drawing.Size(163, 36);
             this.lblKullanici.TabIndex = 3;
             this.lblKullanici.Text = "lblKullanici";
             // 
@@ -79,25 +81,36 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(12, 75);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(234, 36);
+            this.label2.Size = new System.Drawing.Size(187, 29);
             this.label2.TabIndex = 4;
             this.label2.Text = "Mevcut Bakiye:";
             // 
             // lblBakiye
             // 
             this.lblBakiye.AutoSize = true;
-            this.lblBakiye.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblBakiye.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblBakiye.Location = new System.Drawing.Point(213, 75);
             this.lblBakiye.Name = "lblBakiye";
-            this.lblBakiye.Size = new System.Drawing.Size(120, 29);
+            this.lblBakiye.Size = new System.Drawing.Size(139, 36);
             this.lblBakiye.TabIndex = 5;
             this.lblBakiye.Text = "lblBakiye";
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(12, 162);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(593, 33);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Yüklemek İstediğiniz Bakiye Miktarını Giriniz:";
             // 
             // frmBakiyeIstek
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(798, 311);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.lblBakiye);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblKullanici);
@@ -105,7 +118,7 @@
             this.Controls.Add(this.btnBakiyeIste);
             this.Controls.Add(this.txtBakiyeIstek);
             this.Name = "frmBakiyeIstek";
-            this.Text = "frmBakiyeIstek";
+            this.Text = "Bakiye İstek";
             this.Load += new System.EventHandler(this.frmBakiyeIstek_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -120,5 +133,6 @@
         private System.Windows.Forms.Label lblKullanici;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblBakiye;
+        private System.Windows.Forms.Label label3;
     }
 }

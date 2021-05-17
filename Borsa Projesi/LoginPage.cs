@@ -46,7 +46,8 @@ namespace Borsa_Projesi
 
         private void LoginPage_Load(object sender, EventArgs e)
         {
-
+            this.BackColor = System.Drawing.ColorTranslator.FromHtml("#03A9F4");
+            btnKayit.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
         }
     }
 }

@@ -36,11 +36,11 @@
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnUrunOnayla = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnBakiyeOnayla = new System.Windows.Forms.Button();
             this.lstBakiyeOnay = new System.Windows.Forms.ListView();
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnBakiyeOnayla = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -113,16 +113,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Onaylanmayan Bakiye";
             // 
-            // btnBakiyeOnayla
-            // 
-            this.btnBakiyeOnayla.Location = new System.Drawing.Point(808, 33);
-            this.btnBakiyeOnayla.Name = "btnBakiyeOnayla";
-            this.btnBakiyeOnayla.Size = new System.Drawing.Size(89, 36);
-            this.btnBakiyeOnayla.TabIndex = 1;
-            this.btnBakiyeOnayla.Text = "Onayla";
-            this.btnBakiyeOnayla.UseVisualStyleBackColor = true;
-            this.btnBakiyeOnayla.Click += new System.EventHandler(this.btnBakiyeOnayla_Click);
-            // 
             // lstBakiyeOnay
             // 
             this.lstBakiyeOnay.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -152,11 +142,21 @@
             this.columnHeader5.Text = "İstenilen Miktar";
             this.columnHeader5.Width = 135;
             // 
+            // btnBakiyeOnayla
+            // 
+            this.btnBakiyeOnayla.Location = new System.Drawing.Point(808, 33);
+            this.btnBakiyeOnayla.Name = "btnBakiyeOnayla";
+            this.btnBakiyeOnayla.Size = new System.Drawing.Size(89, 36);
+            this.btnBakiyeOnayla.TabIndex = 1;
+            this.btnBakiyeOnayla.Text = "Onayla";
+            this.btnBakiyeOnayla.UseVisualStyleBackColor = true;
+            this.btnBakiyeOnayla.Click += new System.EventHandler(this.btnBakiyeOnayla_Click);
+            // 
             // FormAdminOnay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(998, 702);
+            this.ClientSize = new System.Drawing.Size(971, 702);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FormAdminOnay";

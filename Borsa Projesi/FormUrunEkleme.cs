@@ -44,6 +44,9 @@ namespace Borsa_Projesi
 
         private void FormUrunEkleme_Load(object sender, EventArgs e)
         {
+            this.BackColor = System.Drawing.ColorTranslator.FromHtml("#03A9F4");
+            btnUrunEkle.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
+            button1.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
             label3.Text = Form1.gidenbilgi.ToString();
         }
 

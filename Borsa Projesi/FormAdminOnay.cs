@@ -63,6 +63,9 @@ namespace Borsa_Projesi
        
         private void FormAdminOnay_Load(object sender, EventArgs e)
         {
+            this.BackColor = System.Drawing.ColorTranslator.FromHtml("#03A9F4");
+            btnBakiyeOnayla.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
+            btnUrunOnayla.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
             urunVerileriniGörüntüle();
             bakiyeIstekGörüntüle();
         }

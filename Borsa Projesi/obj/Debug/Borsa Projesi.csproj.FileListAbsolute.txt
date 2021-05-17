@@ -27,3 +27,4 @@ C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\obj\Debug\Borsa_Projesi.
 C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\obj\Debug\Borsa_Projesi.FormUrunEkleme.resources
 C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\obj\Debug\Borsa_Projesi.FormAdminOnay.resources
 C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\obj\Debug\Borsa_Projesi.frmBakiyeIstek.resources
+C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\obj\Debug\Borsa_Projesi.frmUrunDetay.resources
