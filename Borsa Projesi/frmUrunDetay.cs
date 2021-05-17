@@ -113,8 +113,10 @@ namespace Borsa_Projesi
         
         private void frmUrunDetay_Load(object sender, EventArgs e)
         {
+            // Sistem Renkleri Oluşturuldu
             this.BackColor = System.Drawing.ColorTranslator.FromHtml("#03A9F4");
             btnSatınAl.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
+
             verilerigörüntüle();
             lblAlanKullanici.Text = Form1.gidenbilgi.ToString();
             bakiyeGoster();
@@ -128,8 +130,7 @@ namespace Borsa_Projesi
             tutar = istenilenStok * urunfiyati;
             kontrolEt();
             verilerigörüntüle();
-            bakiyeGoster();
-            
+            bakiyeGoster();           
         }
     }
 }

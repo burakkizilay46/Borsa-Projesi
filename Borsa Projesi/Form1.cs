@@ -21,6 +21,7 @@ namespace Borsa_Projesi
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // Sistem Renkleri Oluşturuldu
             this.BackColor = System.Drawing.ColorTranslator.FromHtml("#03A9F4");
             button1.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
             btnGiris.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
@@ -34,8 +35,6 @@ namespace Borsa_Projesi
         {
             LoginPage pageLogin = new LoginPage();
             pageLogin.Show();
-            
-
         }
 
         private void btnGiris_Click(object sender, EventArgs e)
@@ -74,8 +73,6 @@ namespace Borsa_Projesi
         }
 
         private void txtKullaniciAdi_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        {}
     }
 }

@@ -19,9 +19,7 @@ namespace Borsa_Projesi
         }
         SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-4UMSCIK;Initial Catalog=kullanici;Integrated Security=True");
         private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+        {}
 
         private void btnKayit_Click(object sender, EventArgs e)
         {
@@ -46,6 +44,7 @@ namespace Borsa_Projesi
 
         private void LoginPage_Load(object sender, EventArgs e)
         {
+            // Sistem Renkleri Oluşturuldu
             this.BackColor = System.Drawing.ColorTranslator.FromHtml("#03A9F4");
             btnKayit.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
         }

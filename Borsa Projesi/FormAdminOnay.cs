@@ -34,8 +34,6 @@ namespace Borsa_Projesi
                 ekle.SubItems.Add(oku["urunmiktari"].ToString());
                 ekle.SubItems.Add(oku["urunfiyati"].ToString());
 
-
-
                 lstUrunOnay.Items.Add(ekle);
             }
             baglan.Close();
@@ -63,6 +61,7 @@ namespace Borsa_Projesi
        
         private void FormAdminOnay_Load(object sender, EventArgs e)
         {
+            // Sistem Renkleri Oluşturuldu
             this.BackColor = System.Drawing.ColorTranslator.FromHtml("#03A9F4");
             btnBakiyeOnayla.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
             btnUrunOnayla.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
@@ -116,7 +115,6 @@ namespace Borsa_Projesi
             SqlCommand bakiyeAktar = new SqlCommand("Update bakiye set bakiye = '" + mevcutBakiye.ToString() + "' where kullaniciadi = '" + secilenKullanici.ToString() + "'", baglan);
             bakiyeAktar.ExecuteNonQuery();
             baglan.Close();
-
         }
 
         void mevcutBakiyeAl()

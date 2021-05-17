@@ -44,6 +44,7 @@ namespace Borsa_Projesi
 
         private void FormUrunEkleme_Load(object sender, EventArgs e)
         {
+            // Sistem Renkleri Oluşturuldu
             this.BackColor = System.Drawing.ColorTranslator.FromHtml("#03A9F4");
             btnUrunEkle.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
             button1.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
@@ -51,9 +52,7 @@ namespace Borsa_Projesi
         }
 
         private void KisiGor_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
+        {}
 
         private void button1_Click(object sender, EventArgs e)
         {

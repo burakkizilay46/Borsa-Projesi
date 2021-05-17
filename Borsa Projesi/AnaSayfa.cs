@@ -38,13 +38,12 @@ namespace Borsa_Projesi
 
         private void AnaSayfa_Load(object sender, EventArgs e)
         {
+            // Sistem Renkleri Oluşturuldu
             this.BackColor = System.Drawing.ColorTranslator.FromHtml("#03A9F4");
             btnUrunAl.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
             btnUrunEkle.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
             btnYukle.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
             button1.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
-
-
         }
 
         private void btnYukle_Click(object sender, EventArgs e)

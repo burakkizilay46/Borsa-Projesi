@@ -33,8 +33,6 @@ namespace Borsa_Projesi
                 ekle.SubItems.Add(oku["urunmiktari"].ToString());     
                 ekle.SubItems.Add(oku["urunfiyati"].ToString());
 
-                
-
                 LstStok.Items.Add(ekle);
             }
             baglan.Close();
@@ -57,6 +55,7 @@ namespace Borsa_Projesi
 
         private void FormUrunAl_Load(object sender, EventArgs e)
         {
+            // Sistem Renkleri Oluşturuldu
             this.BackColor = System.Drawing.ColorTranslator.FromHtml("#03A9F4");
             btnYenile.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
             verilerigörüntüle();
