@@ -80,12 +80,12 @@ namespace Borsa_Projesi
                 }
                 else
                 {
-                    MessageBox.Show("Yetersiz Bakiye!");
+                    MessageBox.Show("Yetersiz Bakiye, Lütfen Ürün Almak İçin Bakiye Yükleyiniz!");
                 }
             }
             else
             {
-                MessageBox.Show("Yetersiz Stok!");
+                MessageBox.Show("Yetersiz Stok, Daha Fazla Ürün Almak İçin Satıcının Ürün Eklemesini Bekleyiniz!");
             }
         }
 
