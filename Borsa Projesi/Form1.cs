@@ -50,7 +50,6 @@ namespace Borsa_Projesi
             dr = cmd.ExecuteReader();
             if (dr.Read())
             {
-                MessageBox.Show("Giris Yapildi");
                 AnaSayfa Asayfa = new AnaSayfa();
                 Asayfa.Show();
                 this.Hide();
@@ -58,7 +57,6 @@ namespace Borsa_Projesi
             }
             else if( "admin" == txtKullaniciAdi.Text && "admin" == txtSifre.Text)
             {
-                MessageBox.Show("Giris Yapildi");
                 FormAdminOnay admin = new FormAdminOnay();
                 admin.Show();
                 this.Hide();
