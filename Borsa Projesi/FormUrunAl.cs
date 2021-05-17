@@ -18,8 +18,6 @@ namespace Borsa_Projesi
             InitializeComponent();
         }
         SqlConnection baglan = new SqlConnection("Data Source=DESKTOP-4UMSCIK;Initial Catalog=kullanici;Integrated Security=True");
-        int bakiye = 0;
-
         private void verilerigörüntüle()
         {
             LstStok.Items.Clear();
@@ -42,19 +40,9 @@ namespace Borsa_Projesi
             baglan.Close();
         }
 
-        private void bakiyeGoster()
-        {
-            baglan.Open();
-            SqlCommand komutBakiye = new SqlCommand("Select *From bakiye where kullaniciadi like '%" + lblKullaniciAdi.Text.ToString() + "%'", baglan);
-            SqlDataReader oku = komutBakiye.ExecuteReader();
-            oku.Read();
-            lblBakiye.Text = oku["bakiye"].ToString();
-            baglan.Close();
-        }
+        
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           
-        }
+        {}
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -65,22 +53,21 @@ namespace Borsa_Projesi
         {
             frmBakiyeIstek bakiyeIstek = new frmBakiyeIstek();
             bakiyeIstek.Show();
-           // int eklenecekBakiye = Int32.Parse(txtBakiye.Text);
-           // bakiye += eklenecekBakiye;
-           // baglan.Open();
-           // SqlCommand bakiyeGuncelle = new SqlCommand("Update bakiye set bakiye = '" + bakiye.ToString()+ "' where kullaniciadi = '" + lblKullaniciAdi.Text.ToString() + "'", baglan);
-           // bakiyeGuncelle.ExecuteNonQuery();
-           // baglan.Close();
-           //
-           // txtBakiye.Clear();
-           // bakiyeGoster();
         }
 
         private void FormUrunAl_Load(object sender, EventArgs e)
         {
-            lblKullaniciAdi.Text = Form1.gidenbilgi.ToString();
-            bakiyeGoster();
-            bakiye = Int32.Parse(lblBakiye.Text);
+            this.BackColor = System.Drawing.ColorTranslator.FromHtml("#03A9F4");
+            btnYenile.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
+            verilerigörüntüle();
+        }
+        
+        public static String secilenUrun;
+        private void LstStok_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            secilenUrun = LstStok.SelectedItems[0].SubItems[1].Text;
+            frmUrunDetay urunDetay = new frmUrunDetay();
+            urunDetay.Show();
         }
     }
 }

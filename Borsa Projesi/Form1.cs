@@ -21,7 +21,9 @@ namespace Borsa_Projesi
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            this.BackColor = System.Drawing.ColorTranslator.FromHtml("#03A9F4");
+            button1.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
+            btnGiris.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
         }
 
         SqlConnection con;

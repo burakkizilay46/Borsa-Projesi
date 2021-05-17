@@ -32,6 +32,9 @@ namespace Borsa_Projesi
 
         private void frmBakiyeIstek_Load(object sender, EventArgs e)
         {
+            // Hex Kodu
+            this.BackColor = System.Drawing.ColorTranslator.FromHtml("#03A9F4");
+            btnBakiyeIste.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
             lblKullanici.Text = Form1.gidenbilgi.ToString();
             bakiyeGoster();
         }

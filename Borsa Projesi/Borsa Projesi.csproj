@@ -82,6 +82,12 @@
     <Compile Include="frmBakiyeIstek.Designer.cs">
       <DependentUpon>frmBakiyeIstek.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmUrunDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUrunDetay.Designer.cs">
+      <DependentUpon>frmUrunDetay.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmBakiyeIstek.resx">
       <DependentUpon>frmBakiyeIstek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUrunDetay.resx">
+      <DependentUpon>frmUrunDetay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>

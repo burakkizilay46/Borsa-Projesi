@@ -197,10 +197,10 @@
             // 
             // btnKayit
             // 
-            this.btnKayit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnKayit.Location = new System.Drawing.Point(350, 326);
+            this.btnKayit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnKayit.Location = new System.Drawing.Point(350, 313);
             this.btnKayit.Name = "btnKayit";
-            this.btnKayit.Size = new System.Drawing.Size(164, 41);
+            this.btnKayit.Size = new System.Drawing.Size(183, 54);
             this.btnKayit.TabIndex = 17;
             this.btnKayit.Text = "Kayıt Ol";
             this.btnKayit.UseVisualStyleBackColor = true;
