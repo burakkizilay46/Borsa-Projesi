@@ -33,6 +33,7 @@ namespace Borsa_Projesi
             this.btnUrunAl = new System.Windows.Forms.Button();
             this.btnYukle = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnProfil = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnUrunEkle
@@ -60,7 +61,7 @@ namespace Borsa_Projesi
             // btnYukle
             // 
             this.btnYukle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnYukle.Location = new System.Drawing.Point(69, 322);
+            this.btnYukle.Location = new System.Drawing.Point(69, 456);
             this.btnYukle.Name = "btnYukle";
             this.btnYukle.Size = new System.Drawing.Size(327, 172);
             this.btnYukle.TabIndex = 7;
@@ -71,7 +72,7 @@ namespace Borsa_Projesi
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(502, 322);
+            this.button1.Location = new System.Drawing.Point(502, 456);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(327, 172);
             this.button1.TabIndex = 8;
@@ -79,11 +80,23 @@ namespace Borsa_Projesi
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnProfil
+            // 
+            this.btnProfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnProfil.Location = new System.Drawing.Point(290, 271);
+            this.btnProfil.Name = "btnProfil";
+            this.btnProfil.Size = new System.Drawing.Size(327, 172);
+            this.btnProfil.TabIndex = 9;
+            this.btnProfil.Text = "PROFİLİM 👤";
+            this.btnProfil.UseVisualStyleBackColor = true;
+            this.btnProfil.Click += new System.EventHandler(this.btnProfil_Click);
+            // 
             // AnaSayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(904, 555);
+            this.ClientSize = new System.Drawing.Size(904, 676);
+            this.Controls.Add(this.btnProfil);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnYukle);
             this.Controls.Add(this.btnUrunAl);
@@ -101,5 +114,6 @@ namespace Borsa_Projesi
         private System.Windows.Forms.Button btnUrunAl;
         private System.Windows.Forms.Button btnYukle;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnProfil;
     }
 }

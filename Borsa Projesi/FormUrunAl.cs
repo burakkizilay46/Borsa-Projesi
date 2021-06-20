@@ -38,7 +38,29 @@ namespace Borsa_Projesi
             baglan.Close();
         }
 
-        
+        private void fiyataGoreVerileriGoruntule()
+        {
+            int fiyat;
+            fiyat = Int32.Parse(txtBelirliFiyat.Text);
+
+            LstStok.Items.Clear();
+            baglan.Open();
+            SqlCommand komut = new SqlCommand("Select *From urun where urunfiyati like '%" + fiyat.ToString() + "%'", baglan);
+            SqlDataReader oku = komut.ExecuteReader();
+
+            while (oku.Read())
+            {
+                ListViewItem ekle = new ListViewItem();
+                ekle.Text = oku["kullaniciadi"].ToString();
+                ekle.SubItems.Add(oku["urunadi"].ToString());
+                ekle.SubItems.Add(oku["urunmiktari"].ToString());
+                ekle.SubItems.Add(oku["urunfiyati"].ToString());
+
+                LstStok.Items.Add(ekle);
+            }
+            baglan.Close();
+        }
+
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {}
 
@@ -67,6 +89,11 @@ namespace Borsa_Projesi
             secilenUrun = LstStok.SelectedItems[0].SubItems[1].Text;
             frmUrunDetay urunDetay = new frmUrunDetay();
             urunDetay.Show();
+        }
+
+        private void btnFiyataGore_Click(object sender, EventArgs e)
+        {
+            fiyataGoreVerileriGoruntule();
         }
     }
 }

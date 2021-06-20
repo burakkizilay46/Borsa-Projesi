@@ -2,7 +2,6 @@ C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\bin\Debug\Borsa Projesi.
 C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\bin\Debug\Borsa Projesi.exe
 C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\bin\Debug\Borsa Projesi.pdb
 C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\obj\Debug\Borsa Projesi.csprojAssemblyReference.cache
-C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\obj\Debug\Borsa_Projesi.Form1.resources
 C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\obj\Debug\Borsa_Projesi.Properties.Resources.resources
 C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\obj\Debug\Borsa Projesi.csproj.GenerateResource.cache
 C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\obj\Debug\Borsa Projesi.exe
@@ -28,3 +27,9 @@ C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\obj\Debug\Borsa_Projesi.
 C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\obj\Debug\Borsa_Projesi.FormAdminOnay.resources
 C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\obj\Debug\Borsa_Projesi.frmBakiyeIstek.resources
 C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\obj\Debug\Borsa_Projesi.frmUrunDetay.resources
+C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\obj\Debug\Borsa_Projesi.frmGiris.resources
+C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\obj\Debug\Borsa_Projesi.frmProfil.resources
+C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\bin\Debug\itextsharp.dll
+C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\bin\Debug\itextsharp.xml
+C:\Users\burak\source\repos\Borsa Projesi\Borsa Projesi\obj\Debug\Borsa Projesi.csproj.CopyComplete

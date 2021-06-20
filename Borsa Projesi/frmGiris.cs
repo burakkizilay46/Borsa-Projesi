@@ -11,10 +11,10 @@ using System.Data.SqlClient;
 
 namespace Borsa_Projesi
 {
-    public partial class Form1 : Form
+    public partial class frmGiris : Form
     {
         public static string gidenbilgi = "";
-        public Form1()
+        public frmGiris()
         {
             InitializeComponent();
         }

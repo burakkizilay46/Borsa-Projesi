@@ -48,7 +48,7 @@ namespace Borsa_Projesi
             this.BackColor = System.Drawing.ColorTranslator.FromHtml("#03A9F4");
             btnUrunEkle.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
             button1.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
-            label3.Text = Form1.gidenbilgi.ToString();
+            label3.Text = frmGiris.gidenbilgi.ToString();
         }
 
         private void KisiGor_SelectedIndexChanged(object sender, EventArgs e)
