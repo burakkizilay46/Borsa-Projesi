@@ -1,6 +1,6 @@
 ﻿namespace Borsa_Projesi
 {
-    partial class Form1
+    partial class frmGiris
     {
         /// <summary>
         /// Required designer variable.

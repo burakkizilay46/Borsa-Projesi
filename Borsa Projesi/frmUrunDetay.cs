@@ -21,6 +21,7 @@ namespace Borsa_Projesi
         int istenilenStok, kullanicibakiye;
         int stok, urunfiyati;
         int tutar;
+        double aracilikUcreti;
         int saticiBakiye;
         String kullaniciadi;
 
@@ -92,7 +93,11 @@ namespace Borsa_Projesi
         void alimİslemi()
         {
             stok = stok - istenilenStok;
+            aracilikUcreti = tutar * 0.01; // Aracilik Ücretinin Hesaplanması!
             kullanicibakiye = kullanicibakiye - tutar;
+            kullanicibakiye = kullanicibakiye - Convert.ToInt32(aracilikUcreti); // Aracilik ücretinin bakiyeden düşmesi!
+            
+
 
             baglan.Open();
             SqlCommand bakiyedenDus = new SqlCommand("Update bakiye set bakiye = '" + kullanicibakiye + "' where kullaniciadi = '" + lblAlanKullanici.Text.ToString() + "'", baglan);
@@ -118,7 +123,7 @@ namespace Borsa_Projesi
             btnSatınAl.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
 
             verilerigörüntüle();
-            lblAlanKullanici.Text = Form1.gidenbilgi.ToString();
+            lblAlanKullanici.Text = frmGiris.gidenbilgi.ToString();
             bakiyeGoster();
             
             lblMevcutBakiye.Text = kullanicibakiye.ToString();

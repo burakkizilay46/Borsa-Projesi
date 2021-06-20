@@ -44,6 +44,7 @@ namespace Borsa_Projesi
             btnUrunEkle.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
             btnYukle.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
             button1.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
+            btnProfil.BackColor = System.Drawing.ColorTranslator.FromHtml("#FFC107");
         }
 
         private void btnYukle_Click(object sender, EventArgs e)
@@ -55,6 +56,12 @@ namespace Borsa_Projesi
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnProfil_Click(object sender, EventArgs e)
+        {
+            frmProfil frmProfilSayfasi = new frmProfil();
+            frmProfilSayfasi.Show();
         }
     }
 }
