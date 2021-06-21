@@ -41,11 +41,13 @@ namespace Borsa_Projesi
         private void fiyataGoreVerileriGoruntule()
         {
             int fiyat;
-            fiyat = Int32.Parse(txtBelirliFiyat.Text);
+            fiyat = Convert.ToInt32(txtBelirliFiyat.Text);
 
             LstStok.Items.Clear();
             baglan.Open();
-            SqlCommand komut = new SqlCommand("Select *From urun where urunfiyati like '%" + fiyat.ToString() + "%'", baglan);
+            SqlCommand komut = new SqlCommand("Select *From urun where urunfiyati = @urunfiyati" , baglan);
+            komut.Parameters.AddWithValue("@urunfiyati" , fiyat.ToString());
+            komut.ExecuteNonQuery();
             SqlDataReader oku = komut.ExecuteReader();
 
             while (oku.Read())
